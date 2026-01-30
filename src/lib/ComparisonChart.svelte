@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as d3 from 'd3';
+	import { base } from '$app/paths';
 
 	interface FruitData {
 		Fruit: string;
@@ -26,7 +27,7 @@
 
 	// Parse CSV
 	const loadData = async (): Promise<FruitData[]> => {
-		const response = await fetch('/Fruit-Prices-2022-Modified.csv');
+		const response = await fetch(`${base}/Fruit-Prices-2022-Modified.csv`);
 		const text = await response.text();
 		return d3.csvParse(text) as unknown as FruitData[];
 	};

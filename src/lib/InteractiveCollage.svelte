@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { spring } from 'svelte/motion';
+	import { base } from '$app/paths';
 
 	// 3D position for spring()
 	interface Position {
@@ -115,7 +116,7 @@
 		on:touchmove={handleTouchMove}
 		on:touchend={handleTouchEnd}
 	>
-		<img src="/Pomegranate.svg" alt="Pomegranate" />
+		<img src="{base}/Pomegranate.svg" alt="Pomegranate" />
 	</div>
 
 	<div
@@ -132,7 +133,7 @@
 		on:touchmove={handleTouchMove}
 		on:touchend={handleTouchEnd}
 	>
-		<img src="/Peach.svg" alt="Peach" />
+		<img src="{base}/Peach.svg" alt="Peach" />
 	</div>
 
 	<div
@@ -149,7 +150,7 @@
 		on:touchmove={handleTouchMove}
 		on:touchend={handleTouchEnd}
 	>
-		<img src="/Grapes.svg" alt="Grapes" />
+		<img src="{base}/Grapes.svg" alt="Grapes" />
 	</div>
 </div>
 

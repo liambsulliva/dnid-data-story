@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	import BarChart from '$lib/BarChart.svelte';
 	import InteractiveCollage from '$lib/InteractiveCollage.svelte';
@@ -57,7 +58,7 @@
 						>
 							{isTouchDevice ? 'Drag Me!' : 'Hover Me!'}
 							<div class="absolute -right-20 -top-12 w-24 rotate-12">
-								<img src="/emphasis-scribble.svg" alt="Emphasis Scribble" />
+								<img src="{base}/emphasis-scribble.svg" alt="Emphasis Scribble" />
 							</div>
 						</div>
 						<InteractiveCollage />
@@ -87,9 +88,9 @@
 	<section class="mt-32 lg:mx-8">
 		<div class="relative mx-6 mb-12 inline-flex items-center">
 			<h2 class="mr-2 text-center font-freightText text-5xl font-bold">Fresh</h2>
-			<img src="/Apple.svg" alt="Apple" />
+			<img src="{base}/Apple.svg" alt="Apple" />
 			<div class="absolute bottom-0 left-0 right-0">
-				<img src="/header-scribble.svg" alt="Underline" class="w-32" />
+				<img src="{base}/header-scribble.svg" alt="Underline" class="w-32" />
 			</div>
 		</div>
 		<div class="mx-6">
@@ -198,9 +199,9 @@
 	<section class="mt-36 lg:mx-8">
 		<div class="relative mx-6 mb-12 inline-flex items-center">
 			<h2 class="mr-2 text-center font-freightText text-5xl font-bold">Frozen</h2>
-			<img src="/Plum.svg" alt="Plum" />
+			<img src="{base}/Plum.svg" alt="Plum" />
 			<div class="absolute bottom-0 left-0 right-0">
-				<img src="/header-scribble.svg" alt="Underline" class="w-36" />
+				<img src="{base}/header-scribble.svg" alt="Underline" class="w-36" />
 			</div>
 		</div>
 		<div class="mx-6 my-8">
@@ -242,9 +243,9 @@
 	<section class="mt-36 lg:mx-8">
 		<div class="relative mx-6 mb-12 inline-flex items-center">
 			<h2 class="mr-2 text-center font-freightText text-5xl font-bold">Canned</h2>
-			<img src="/Pineapple.svg" alt="Pineapple" />
+			<img src="{base}/Pineapple.svg" alt="Pineapple" />
 			<div class="absolute -bottom-1 left-0 right-0">
-				<img src="/header-scribble.svg" alt="Underline" class="w-40" />
+				<img src="{base}/header-scribble.svg" alt="Underline" class="w-40" />
 			</div>
 		</div>
 		<div class="mx-6 my-8">
@@ -305,9 +306,9 @@
 	<section class="mt-36 lg:mx-8">
 		<div class="relative mx-6 mb-12 inline-flex items-center">
 			<h2 class="mr-4 text-center font-freightText text-5xl font-bold">Dried</h2>
-			<img src="/Tomato.svg" alt="Tomatoes" />
+			<img src="{base}/Tomato.svg" alt="Tomatoes" />
 			<div class="absolute bottom-0 left-0 right-0">
-				<img src="/header-scribble.svg" alt="Underline" class="w-32" />
+				<img src="{base}/header-scribble.svg" alt="Underline" class="w-32" />
 			</div>
 		</div>
 		<div class="mx-6">
@@ -373,9 +374,9 @@
 	<section class="mt-36 lg:mx-8">
 		<div class="relative mx-6 mb-12 inline-flex items-center">
 			<h2 class="mr-2 text-center font-freightText text-5xl font-bold">... Juice?</h2>
-			<img src="/Lemons.svg" alt="Lemons" />
+			<img src="{base}/Lemons.svg" alt="Lemons" />
 			<div class="absolute bottom-0 left-1 right-0">
-				<img src="/header-scribble.svg" alt="Underline" class="w-36" />
+				<img src="{base}/header-scribble.svg" alt="Underline" class="w-36" />
 			</div>
 		</div>
 		<div class="mx-6">
